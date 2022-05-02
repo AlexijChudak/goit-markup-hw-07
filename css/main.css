@@ -1,3 +1,18 @@
+:root {
+  --secondary-color: #FFFFFF;
+  --animation-color: #2196F3;
+  --paragraph-text-color: #757575;
+  --background-main-color: #2F303A;
+  --background-grey-color: #F5F4FA;
+  --socialnet-sleep-color: #AFB1B8;
+  --main-text-color: #212121;
+  --border-color: #EEEEEE;
+  --main-font-family: 'Roboto';
+  --secondary-font-family: 'Raleway';
+  --main-letter-spacing: 0.03em;
+  --main-border-radius: 4px;
+}
+
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -274,7 +289,7 @@ p {
 }
 
 .section {
-  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .list {
@@ -356,7 +371,7 @@ p {
   letter-spacing: 0.02em;
 }
 
-.header::after {
+.psevdo::after {
   display: block;
   border: 1px solid #ECECEC;
   content: "";
@@ -453,7 +468,6 @@ p {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  height: 600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.1), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -532,12 +546,6 @@ p {
 
 .specialization__list:nth-child(3n) {
   margin-right: 0;
-}
-
-.specialization__list:nth-last-child() .text {
-  font-size: 14px;
-  line-height: 1.71;
-  color: var(--paragraph-text-color);
 }
 
 .specialization__item {
@@ -1018,11 +1026,11 @@ p {
   overflow: hidden;
 }
 
-.project__overlay .project__img {
+.project__img {
   display: block;
 }
 
-.project__overlay .project__text {
+.project__text {
   top: 200%;
   position: absolute;
   width: 100%;
@@ -1036,8 +1044,8 @@ p {
   opacity: 0;
 }
 
-.project__item:hover .project__overlay,
-.project__item:focus .project__overlay {
+.project__item:hover .project__text,
+.project__item:focus .project__text {
   transform: translateY(-200%);
   opacity: 0.9;
 }
