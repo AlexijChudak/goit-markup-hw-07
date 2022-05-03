@@ -371,7 +371,7 @@ p {
   letter-spacing: 0.02em;
 }
 
-.psevdo::after {
+.pseudo::after {
   display: block;
   border: 1px solid #ECECEC;
   content: "";
